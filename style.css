@@ -629,22 +629,23 @@ QWidget#mainToolbar {
 QToolBar {
 	background: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0 #303030, stop:1 #303030);
 	border: none;
-	padding: 2 2 2 2px;
-	spacing: 5;
+	padding: 0 0 0 0px;
+	spacing: 0;
 }
 
 QToolBar::separator {
 	border: none;
-	width: 5px;
+	width: 0px;
 }
 
 /* all tool buttons */
 
 QToolButton, QToolButton::menu-button {
-	margin: 2px;
+	margin: 1px;
 	padding: 2px 2px 2px 2px;
-	border-top: 1px solid #303030;
-	border-bottom: 2px solid #303030;
+	/*border-top: 1px solid #303030;
+	border-bottom: 2px solid #303030;*/
+	border-radius: 0px;
 	background: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1 stop:0 #61797c, stop:1 #61696c);
 	font-size:10px;
 	color: #bbb;
@@ -677,9 +678,9 @@ QToolButton:checked {
 /* buttons with combined menu */
 
 QToolButton[popupMode="1"] {
-	margin-right: 13px;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
+	margin-right: 15px;
+	border-top-right-radius: 5;
+	border-bottom-right-radius: 5;
 }
 
 QToolButton::menu-button {
