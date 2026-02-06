@@ -4,7 +4,7 @@
 
 /* most foreground text items */
 QLabel, QTreeWidget, QListWidget, QGroupBox, QMenuBar, QCheckBox {
-	color: #bbbbbb;
+	color: #bbb;
 }
 
 QTreeView {
@@ -52,7 +52,7 @@ lmms--gui--Knob {
 }
 
 lmms--gui--AutomationEditor {
-	color: #ffffff;
+	color: #bbb;
 	background-color: #303030;
 	qproperty-backgroundShade: rgba(255, 255, 255, 15);
 	qproperty-nodeInValueColor: #d3a775;
@@ -202,7 +202,7 @@ lmms--gui--PianoRoll {
 	qproperty-whiteKeyInactiveTextShadow: #fff;
 	qproperty-whiteKeyInactiveBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #d6d6d6, stop:1 #e3e3e3);
 	qproperty-whiteKeyDisabledBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #a0a0a0, stop:1 #b0b0b0);
-	qproperty-blackKeyWidth: 48;
+	qproperty-blackKeyWidth: 37;
 	qproperty-blackKeyActiveBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #636c63, stop:1 #535c5a);
 	qproperty-blackKeyInactiveBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #262626, stop:1 #313131);
 	qproperty-blackKeyDisabledBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #606060, stop:1 #505050);
@@ -213,15 +213,15 @@ lmms--gui--PianoRoll {
 	qproperty-barLineColor: #818c71;
 
 	/* Text on the white piano keys */
-	qproperty-textColor: #000;
+	qproperty-textColor: #fff;
 	qproperty-textColorLight: #0bd556;
-	qproperty-textShadow: #fff;
+	qproperty-textShadow: #bbb;
 }
 
 lmms--gui--TabWidget {
 	background-color: #303030;
 	qproperty-tabText: rgba(255, 255, 255, 180);
-	qproperty-tabTitleText: #fff;
+	qproperty-tabTitleText: #bbb;
 	qproperty-tabSelected: #404040;
 	qproperty-tabTextSelected: rgba(255, 255, 255, 255);
 	qproperty-tabBackground: #505050;
@@ -862,7 +862,7 @@ lmms--gui--ClipView   {
 	qproperty-mutedBackgroundColor: #373d48;
 	qproperty-selectedColor: #61797c;
 	qproperty-patternClipBackground: #373d48;
-	qproperty-textColor: #fff;
+	qproperty-textColor: #bbb;
 	qproperty-textBackgroundColor: rgba(0, 0, 0, 100);
 	qproperty-textShadowColor: rgba(0,0,0,200);
 	qproperty-gradient: false; /* boolean property, set true to have a gradient */
@@ -1136,7 +1136,7 @@ lmms--gui--WatsynView lmms--gui--Knob#xtalkKnob {
 }
 
 lmms--gui--MonstroView lmms--gui--Knob {
-	color: #ffffff;
+	color: #bbb;
 	qproperty-outerColor: #aaaaaa;
 	qproperty-outerRadius: 9;
 	qproperty-innerRadius: 6;
@@ -1147,7 +1147,7 @@ lmms--gui--MonstroView lmms--gui--Knob {
 
 lmms--gui--NesInstrumentView lmms--gui--Knob {
 	color: #e7231b;
-	qproperty-outerColor: #fff;
+	qproperty-outerColor: #bbb;
 	qproperty-outerRadius: 11.0;
 	qproperty-innerRadius: 8.0;
 	qproperty-centerPointX: 14.5;
@@ -1191,13 +1191,13 @@ lmms--gui--BarModelEditor {
 
 lmms--gui--LmmsPalette {
 	qproperty-background: #303030;
-	qproperty-windowText: #eee;
+	qproperty-windowText: #bbb;
 	qproperty-base: #303030;
 	qproperty-text: #bbb;
 	qproperty-button: #53686c;
 	qproperty-shadow: rgb(60,60,60);
-	qproperty-buttonText: #d1d8e4;
-	qproperty-brightText: #d1d8e4;
+	qproperty-buttonText: #bbb;
+	qproperty-brightText: #bbb;
 	qproperty-highlight: #353535;
 	qproperty-highlightedText: #d1d8e4;
 }
