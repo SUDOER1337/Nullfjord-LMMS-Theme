@@ -1,0 +1,20 @@
+/* palette information  */
+
+lmms--gui--LmmsPalette {
+	qproperty-background: #303030;
+	qproperty-windowText: #bbb;
+	qproperty-base: #303030;
+	qproperty-text: #bbb;
+	qproperty-button: #53686c;
+	qproperty-shadow: rgb(60,60,60);
+	qproperty-buttonText: #bbb;
+	qproperty-brightText: #bbb;
+	qproperty-highlight: #353535;
+	qproperty-highlightedText: #d1d8e4;
+}
+
+* {
+	font-family: "Iosevka Nerd Font";
+  font-weight: bold;
+  font-size: 12px;
+}

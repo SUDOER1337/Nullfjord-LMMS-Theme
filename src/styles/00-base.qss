@@ -1,0 +1,219 @@
+/********************
+ * LMMS style sheet *
+ ********************/
+
+/* most foreground text items */
+QLabel, QTreeWidget, QListWidget, QGroupBox, QMenuBar, QCheckBox {
+	color: #bbb;
+}
+
+QTreeView {
+	outline: none;
+	alternate-background-color: #303030;
+}
+
+QTreeWidget::item {
+	padding: 2px;
+}
+
+QTreeWidget::item:hover,
+QTreeWidget::branch:hover {
+	background-color: #404040;
+	padding-left: 0px;
+}
+
+QTreeWidget::item:selected,
+QTreeWidget::branch:selected {
+	background-color: #bbb;
+	padding-left: 10px;
+}
+
+QTreeView::branch:has-children:open {
+	border-image: url("resources:assets/ui/open_branch.png") 0;
+}
+
+QTreeView::branch:has-children:closed {
+	border-image: url("resources:assets/ui/closed_branch.png") 0;
+}
+
+QMdiArea {
+	background-color: #303030;
+}
+
+lmms--gui--FileBrowser QCheckBox
+{
+	font-size: 7pt;
+	color: #bbb;
+}
+
+lmms--gui--Knob {
+	qproperty-lineInactiveColor: rgb(120, 120, 120);
+	qproperty-arcInactiveColor: rgba(120, 120, 120, 70);
+}
+
+lmms--gui--AutomationEditor {
+	color: #bbb;
+	background-color: #303030;
+	qproperty-backgroundShade: rgba(255, 255, 255, 15);
+	qproperty-nodeInValueColor: #d3a775;
+	qproperty-nodeOutValueColor: #d3a775;
+	qproperty-nodeTangentLineColor: rgba(200, 200, 200, 255);
+	qproperty-crossColor: rgba(215, 210, 254, 150);
+	/* Grid colors */
+	qproperty-lineColor: #292929;
+	qproperty-beatLineColor: #d3a775;
+	qproperty-barLineColor: #da8766;
+
+	qproperty-graphColor: #d3a77f33;
+	qproperty-scaleColor: #222;
+	qproperty-ghostNoteColor: rgba(248, 248, 255, 125);
+	qproperty-detuningNoteColor: rgba(248, 11, 11, 125);
+	qproperty-ghostSampleColor: rgba(125, 125, 125, 125);
+}
+
+/* text box */
+
+QLineEdit {
+	border-radius: 0px;
+	border: 1px;
+	background: #303030;
+}
+
+QLineEdit:read-only {
+	border-style: none;
+	background: transparent;
+}
+
+/* text box when it wants text */
+
+QLineEdit:focus {
+	border: 2px solid #6c7970;
+}
+
+/* Set color and selection background color for various inputs.
+   SpinBoxes are used in QInputDialogs */
+
+QTextEdit, QLineEdit:focus, QComboBox:focus, QSpinBox:focus, QDoubleSpinBox:focus {
+	color: #bbb;
+	selection-background-color: #303030;
+}
+
+QToolTip {
+	background: #505050;
+	color: #bbb;
+  padding: 3;
+}
+
+lmms--gui--TextFloat, lmms--gui--SimpleTextFloat {
+	background: #505050;
+	color: #bbb;
+}
+
+
+/* splash screen text */
+QSplashScreen QLabel {
+	color: white;
+}
+
+
+QMenu {
+	background-color: #303030;
+  padding: 5px;
+}
+
+QMenu::separator {
+	height: 1.0px;
+	background: #bbb;
+	margin-left: 0x;
+	margin-right: 0px;
+}
+
+QMenu::item {
+	color: #bbb;
+	padding: 4px 35px 4px 23px;
+	margin: 3px 0px 3px 0px;
+}
+
+QMenu::item:selected {
+	color: #bbb;
+	background-color: #444;
+  border-left: 2px;
+}
+
+QMenu::item:disabled {
+	color: #888;
+	background-color: #444;
+	padding: 4px 32px 4px 20px;
+}
+
+QMenu::icon {
+	margin: 3px;
+}
+
+QMenu::indicator {
+	width: 16;
+	height: 16;
+	opacity: 0;
+	border: 1px solid #252525;
+	border-radius: 2px;
+	background-color: #252525;
+}
+
+QMenu::indicator:checked {
+	image: url("resources:assets/ui/apply.png");
+}
+
+QMenu::indicator:selected {
+	image: url("resources:assets/ui/apply-selected.png");
+	border: 1px solid #202020;
+	background-color: #202020;
+}
+
+lmms--gui--PositionLine {
+	qproperty-tailGradient: true;
+	qproperty-lineColor: rgb(255, 255, 255);
+	qproperty-recordingColor: rgb(151, 59, 67);
+}
+
+lmms--gui--PianoRoll {
+	background-color: #404040;
+	qproperty-backgroundShade: rgba(255, 255, 255, 10);
+	qproperty-noteModeColor: #8daa98;
+	qproperty-noteColor: #aad4b9;
+	qproperty-stepNoteColor: #9b1313;
+	qproperty-currentStepNoteColor: rgb(245, 3, 139);
+	qproperty-noteTextColor: #bbb;
+	qproperty-noteOpacity: 165;
+	qproperty-noteBorders: false; /* boolean property, set false to have borderless notes */
+	qproperty-selectedNoteColor: #4c575f;
+	qproperty-ghostNoteColor: #1e1e1e;
+	qproperty-ghostNoteTextColor: #bbb;
+	qproperty-ghostNoteOpacity: 60;
+	qproperty-ghostNoteBorders: false;
+	qproperty-barColor: hsl(78, 7%, 47%);
+	qproperty-markedSemitoneColor: rgba(255, 255, 255, 30);
+	qproperty-knifeCutLine: rgba(255, 0, 0, 255);
+	/* Piano keys */
+	qproperty-whiteKeyWidth: 64;
+	qproperty-whiteKeyActiveTextColor: #333;
+	qproperty-whiteKeyActiveTextShadow: #bbb;
+	qproperty-whiteKeyActiveBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #636c7a, stop:1 #535c5a);
+	qproperty-whiteKeyInactiveTextColor: #000;
+	qproperty-whiteKeyInactiveTextShadow: #fff;
+	qproperty-whiteKeyInactiveBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #d6d6d6, stop:1 #e3e3e3);
+	qproperty-whiteKeyDisabledBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #a0a0a0, stop:1 #b0b0b0);
+	qproperty-blackKeyWidth: 37;
+	qproperty-blackKeyActiveBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #636c63, stop:1 #535c5a);
+	qproperty-blackKeyInactiveBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #262626, stop:1 #313131);
+	qproperty-blackKeyDisabledBackground: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #606060, stop:1 #505050);
+
+	/* Grid colors */
+	qproperty-lineColor: #292929;
+	qproperty-beatLineColor: #616c61;
+	qproperty-barLineColor: #818c71;
+
+	/* Text on the white piano keys */
+	qproperty-textColor: #fff;
+	qproperty-textColorLight: #0bd556;
+	qproperty-textShadow: #bbb;
+}

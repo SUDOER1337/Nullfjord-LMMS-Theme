@@ -1,0 +1,367 @@
+lmms--gui--TabWidget {
+	background-color: #303030;
+	qproperty-tabText: rgba(255, 255, 255, 180);
+	qproperty-tabTitleText: #bbb;
+	qproperty-tabSelected: #404040;
+	qproperty-tabTextSelected: rgba(255, 255, 255, 255);
+	qproperty-tabBackground: #505050;
+	qproperty-tabBorder: #505050;
+}
+
+lmms--gui--GroupBox {
+	background-color: #303030;
+}
+
+/* main toolbar oscilloscope - can have transparent bg now */
+
+lmms--gui--Oscilloscope {
+	border: #bbb;
+	qproperty-leftChannelColor: #61797c;
+	qproperty-rightChannelColor: #A3BE8C;
+	qproperty-otherChannelsColor: #BF616A;
+	qproperty-clippingColor: #AF316A;
+}
+
+/* main toolbar cpu load widget - this can have transparent bg now */
+
+lmms--gui--CPULoadWidget {
+	border: #bbb;
+	background: url("resources:assets/ui/cpuload_bg.png");
+	qproperty-stepSize: 1;
+}
+
+/* scrollbar: trough */
+
+QScrollBar:horizontal {
+	border: 3px solid #262626;
+	background: #252525;
+	height: 12px;
+	margin: 0px 12px;
+}
+QScrollBar:vertical {
+	border: 3px solid #262626;
+	background: #252525;
+	width: 12px;
+	margin: 12px 0px;
+}
+
+/* scrollbar: trough clicky things */
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal,
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+QScrollBar::add-page:horizontal:pressed, QScrollBar::sub-page:horizontal:pressed,
+QScrollBar::add-page:vertical:pressed, QScrollBar::sub-page:vertical:pressed {
+	background: rgba(0,0,0,50);
+}
+
+/* scrollbar: handles (sliders) */
+
+QScrollBar::handle:horizontal {
+	background: #555;
+	border: none;
+	border-radius: 0px;
+	min-width: 24px;
+}
+
+QScrollBar::handle:horizontal:hover {
+	background: #bbb;
+}
+
+QScrollBar::handle:horizontal:pressed {
+	background: #ffffff;
+}
+
+QScrollBar::handle:vertical {
+	background: #303030;
+	border-bottom: 3 solid #5c5c5c;
+	border-bottom: 3 solid #5c5c5c;
+	border-radius: 0px;
+	min-height: 14px;
+}
+
+QScrollBar::handle:vertical:hover {
+	background: #bbb;
+}
+
+QScrollBar::handle:vertical:pressed {
+	background: #ffffff;
+}
+
+QScrollBar::handle:horizontal:disabled, QScrollBar::handle:vertical:disabled  {
+	background: #505050;
+	border-radius: 0px;
+	border: none;
+}
+
+lmms--gui--EffectRackView QScrollBar::handle:vertical:disabled  {
+	background: #404040;
+	border: none;
+	border-radius: 0px;
+}
+
+/* arrow buttons */
+
+QScrollBar::add-line, QScrollBar::sub-line {
+	background: #303030;
+	border-radius: 0px;
+	border: none;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal 	{  	subcontrol-position: right; width: 12px;}
+QScrollBar::sub-line:horizontal 	{ 	subcontrol-position: left; width: 12px;}
+QScrollBar::add-line:vertical 		{ 	subcontrol-position: bottom; height: 12px;}
+QScrollBar::sub-line:vertical 		{ 	subcontrol-position: top; height: 12px;}
+
+QScrollBar::add-line:hover, QScrollBar::sub-line:hover {
+	background: #303030;
+}
+
+QScrollBar::add-line:pressed, QScrollBar::sub-line:pressed {
+	background: #303030;
+}
+
+QScrollBar::add-line:disabled, QScrollBar::sub-line:disabled {
+	background: #303030;
+}
+
+/* arrow button arrows */
+
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal,
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	border: none;
+	background-color: none;
+	width: 5px;
+	height: 5px;
+}
+
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+	margin-top: 0px;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	margin-left: 0px;
+}
+
+QScrollBar::left-arrow:horizontal { background-image: url("resources:assets/ui/sbarrow_left.png");}
+QScrollBar::right-arrow:horizontal { background-image: url("resources:assets/ui/sbarrow_right.png");}
+QScrollBar::up-arrow:vertical { background-image: url("resources:assets/ui/sbarrow_up.png");}
+QScrollBar::down-arrow:vertical { background-image: url("resources:assets/ui/sbarrow_down.png");}
+QScrollBar::left-arrow:horizontal:disabled { background-image: url("resources:assets/ui/sbarrow_left_d.png");}
+QScrollBar::right-arrow:horizontal:disabled { background-image: url("resources:assets/ui/sbarrow_right_d.png");}
+QScrollBar::up-arrow:vertical:disabled { background-image: url("resources:assets/ui/sbarrow_up_d.png");}
+QScrollBar::down-arrow:vertical:disabled { background-image: url("resources:assets/ui/sbarrow_down_d.png");}
+lmms--gui--EffectRackView QScrollBar::up-arrow:vertical:disabled { background-image: url("resources:assets/ui/sbarrow_up.png");}
+lmms--gui--EffectRackView QScrollBar::down-arrow:vertical:disabled { background-image: url("resources:assets/ui/sbarrow_down.png");}
+
+/* background for song editor and pattern editor */
+
+lmms--gui--TrackContainerView QFrame {
+	background-color: #303030;
+}
+
+/* background for track controls */
+lmms--gui--TrackView > QWidget {
+	background-color: #404040;
+}
+
+
+QPushButton#btn {
+	color: #bbb;
+	padding: 4 4;
+	border: 1 solid #444;
+	border-radius: 0;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 30%), stop:0.1 rgba(255, 255, 255, 4%), stop:0.9 rgba(0, 0, 0, 4%), stop:1 rgba(0, 0, 0, 40%));
+}
+
+QPushButton#btn:hover {
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 35%), stop:0.1 rgba(255, 255, 255, 7%), stop:0.9 rgba(255, 255, 255, 4%), stop:1 rgba(0, 0, 0, 35%));
+}
+
+QPushButton#btn:pressed,
+QPushButton#btn:checked {
+	color: #303030;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 25%), stop:0.1 transparent, stop:0.9 rgba(0, 0, 0, 15%), stop:1 rgba(0, 0, 0, 35%));
+}
+
+/* autoscroll, loop, stop behaviour toggle buttons */
+
+/* track background config */
+lmms--gui--TrackContentWidget {
+	/* colors */
+	qproperty-darkerColor: #252525;
+	qproperty-lighterColor: #202020;
+	qproperty-coarseGridColor: #606060;
+	qproperty-fineGridColor: #808080;
+	qproperty-horizontalColor: #606060;
+	qproperty-embossColor: rgba(0, 0, 0, 0);
+	
+	/* line widths */
+	qproperty-coarseGridWidth: 2;
+	qproperty-fineGridWidth: 1;
+	qproperty-horizontalWidth: 1;
+	qproperty-embossWidth: 0;
+	
+	/* positive offset shifts emboss to the right */
+	qproperty-embossOffset: 0;
+}
+
+/* 20px = 1px border + 2px padding + 14px icon + 2px padding + 1px border */
+QPushButton#btn-mute,
+QPushButton#btn-mute-inv,
+QPushButton#btn-mute-inv:checked,
+QPushButton#btn-solo,
+lmms--gui--TrackOperationsWidget QPushButton {
+	padding: 2;
+	min-height: 14;
+	max-height: 14;
+	min-width: 14;
+	max-width: 14;
+}
+
+/* 16px = 1px border + 2px padding + 10px icon + 2px padding + 1px border */
+QPushButton#btn-stepper-down,
+QPushButton#btn-stepper-left,
+QPushButton#btn-stepper-right {
+	padding: 2;
+	min-height: 10;
+	max-height: 10;
+	min-width: 10;
+	max-width: 10;
+}
+
+QPushButton#btn-stepper-down,
+QPushButton#btn-stepper-left,
+QPushButton#btn-stepper-right,
+QPushButton#btn-mute,
+QPushButton#btn-mute-inv:checked,
+QPushButton#btn-solo,
+lmms--gui--TrackOperationsWidget QPushButton {
+	border: 1 solid #505050;
+	border-top: 1 solid #454545;
+	border-bottom: 1 solid #303030;
+	border-radius: 10;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 20%), stop:0.1 rgba(255, 255, 255, 2%), stop:0.9 rgba(0, 0, 0, 2%), stop:1 rgba(0, 0, 0, 40%));
+}
+
+QPushButton#btn-stepper-down::menu-indicator,
+QPushButton#btn-stepper-left::menu-indicator,
+QPushButton#btn-stepper-right::menu-indicator,
+lmms--gui--TrackOperationsWidget QPushButton::menu-indicator {
+	image: none;
+}
+
+lmms--gui--TrackOperationsWidget QPushButton {
+	image: url("resources:assets/ui/gear.svg");
+}
+
+QPushButton#btn-mute,
+QPushButton#btn-mute-inv:checked {
+	image: url("resources:assets/ui/speaker.svg");
+}
+
+QPushButton#btn-solo {
+	image: url("resources:assets/ui/headphones.svg");
+}
+
+QPushButton#btn-stepper-left {
+	image: url("resources:assets/ui/arrow-left.svg");
+}
+
+QPushButton#btn-stepper-right {
+	image: url("resources:assets/ui/arrow-right.svg");
+}
+
+QPushButton#btn-stepper-down {
+	image: url("resources:assets/ui/arrow-down.svg");
+}
+
+QPushButton#btn-stepper-down:hover,
+QPushButton#btn-stepper-left:hover,
+QPushButton#btn-stepper-right:hover,
+QPushButton#btn-mute:hover,
+QPushButton#btn-solo:hover,
+lmms--gui--TrackOperationsWidget QPushButton:hover {
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 25%), stop:0.1 rgba(255, 255, 255, 7%), stop:0.9 transparent, stop:1 rgba(0, 0, 0, 35%));
+}
+
+QPushButton#btn-stepper-down:pressed,
+QPushButton#btn-stepper-left:pressed,
+QPushButton#btn-stepper-right:pressed,
+lmms--gui--TrackOperationsWidget QPushButton:pressed {
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 25%), stop:0.1 transparent, stop:0.8 rgba(0, 0, 0, 15%), stop:1 rgba(0, 0, 0, 35%));
+}
+
+QPushButton#btn-mute-inv,
+QPushButton#btn-mute:checked {
+	image: url("resources:assets/ui/speaker_slash.svg");
+	border: 1 solid #BE616A;
+	background: qlineargradient(
+		x1:0, y1:0, x2:0, y2:1,
+		stop:0   #BF616A,
+		stop:0.1 #D08770,
+		stop:0.9 #A44A52,
+		stop:1   #4C566A
+	);
+}
+
+QPushButton#btn-solo:checked {
+	border: 1 solid #61797c;
+	background: qlineargradient(
+		x1:0, y1:0, x2:0, y2:1,
+		stop:0   #778394,
+		stop:0.1 #81A1C1,
+		stop:0.9 #778394,
+		stop:1   #4C566A
+	);
+}
+
+/* font sizes */
+
+lmms--gui--Sf2InstrumentView > QLabel {
+	font-size:11px;
+}
+
+/* main toolbar sliders (master vol, master pitch) */
+
+lmms--gui--AutomatableSlider::groove:vertical {
+	background: #252525;
+	border-bottom: 3 solid #333;
+	border-top: 4 solid #202020;
+	border-radius: 0px;
+	width: 90px;
+	margin: 2px 2px;
+}
+
+lmms--gui--AutomatableSlider::handle:vertical {
+	background: none;
+	border-image: url("resources:assets/ui/main_slider.png");
+	width: 26px;
+	height: 10px;
+	border-radius: 0px;
+	margin: -4px -12px -2px;
+}
+
+/* main horizontal sliders (zoom) */
+
+lmms--gui--AutomatableSlider::groove:horizontal {
+	background: #252525;
+	border: none;	
+  border-bottom: 3 solid #333;
+	border-top: 4 solid #202020;
+	border-radius: 0px;
+	height: 30px;
+	margin: 2px;
+}
+
+lmms--gui--AutomatableSlider::handle:horizontal {
+	background: none;
+	border-image: url("resources:assets/ui/horizontal_slider.png");
+	width: 10px;
+	height: 26px;
+	border-radius: 0px;
+	margin: -12px -2px;
+}

@@ -29,11 +29,11 @@ QTreeWidget::branch:selected {
 }
 
 QTreeView::branch:has-children:open {
-	border-image: url("resources:open_branch.png") 0;
+	border-image: url("resources:assets/ui/open_branch.png") 0;
 }
 
 QTreeView::branch:has-children:closed {
-	border-image: url("resources:closed_branch.png") 0;
+	border-image: url("resources:assets/ui/closed_branch.png") 0;
 }
 
 QMdiArea {
@@ -160,11 +160,11 @@ QMenu::indicator {
 }
 
 QMenu::indicator:checked {
-	image: url("resources:apply.png");
+	image: url("resources:assets/ui/apply.png");
 }
 
 QMenu::indicator:selected {
-	image: url("resources:apply-selected.png");
+	image: url("resources:assets/ui/apply-selected.png");
 	border: 1px solid #202020;
 	background-color: #202020;
 }
@@ -246,7 +246,7 @@ lmms--gui--Oscilloscope {
 
 lmms--gui--CPULoadWidget {
 	border: #bbb;
-	background: url("resources:cpuload_bg.png");
+	background: url("resources:assets/ui/cpuload_bg.png");
 	qproperty-stepSize: 1;
 }
 
@@ -366,16 +366,16 @@ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
 	margin-left: 0px;
 }
 
-QScrollBar::left-arrow:horizontal { background-image: url("resources:sbarrow_left.png");}
-QScrollBar::right-arrow:horizontal { background-image: url("resources:sbarrow_right.png");}
-QScrollBar::up-arrow:vertical { background-image: url("resources:sbarrow_up.png");}
-QScrollBar::down-arrow:vertical { background-image: url("resources:sbarrow_down.png");}
-QScrollBar::left-arrow:horizontal:disabled { background-image: url("resources:sbarrow_left_d.png");}
-QScrollBar::right-arrow:horizontal:disabled { background-image: url("resources:sbarrow_right_d.png");}
-QScrollBar::up-arrow:vertical:disabled { background-image: url("resources:sbarrow_up_d.png");}
-QScrollBar::down-arrow:vertical:disabled { background-image: url("resources:sbarrow_down_d.png");}
-lmms--gui--EffectRackView QScrollBar::up-arrow:vertical:disabled { background-image: url("resources:sbarrow_up.png");}
-lmms--gui--EffectRackView QScrollBar::down-arrow:vertical:disabled { background-image: url("resources:sbarrow_down.png");}
+QScrollBar::left-arrow:horizontal { background-image: url("resources:assets/ui/sbarrow_left.png");}
+QScrollBar::right-arrow:horizontal { background-image: url("resources:assets/ui/sbarrow_right.png");}
+QScrollBar::up-arrow:vertical { background-image: url("resources:assets/ui/sbarrow_up.png");}
+QScrollBar::down-arrow:vertical { background-image: url("resources:assets/ui/sbarrow_down.png");}
+QScrollBar::left-arrow:horizontal:disabled { background-image: url("resources:assets/ui/sbarrow_left_d.png");}
+QScrollBar::right-arrow:horizontal:disabled { background-image: url("resources:assets/ui/sbarrow_right_d.png");}
+QScrollBar::up-arrow:vertical:disabled { background-image: url("resources:assets/ui/sbarrow_up_d.png");}
+QScrollBar::down-arrow:vertical:disabled { background-image: url("resources:assets/ui/sbarrow_down_d.png");}
+lmms--gui--EffectRackView QScrollBar::up-arrow:vertical:disabled { background-image: url("resources:assets/ui/sbarrow_up.png");}
+lmms--gui--EffectRackView QScrollBar::down-arrow:vertical:disabled { background-image: url("resources:assets/ui/sbarrow_down.png");}
 
 /* background for song editor and pattern editor */
 
@@ -475,28 +475,28 @@ lmms--gui--TrackOperationsWidget QPushButton::menu-indicator {
 }
 
 lmms--gui--TrackOperationsWidget QPushButton {
-	image: url("resources:gear.svg");
+	image: url("resources:assets/ui/gear.svg");
 }
 
 QPushButton#btn-mute,
 QPushButton#btn-mute-inv:checked {
-	image: url("resources:speaker.svg");
+	image: url("resources:assets/ui/speaker.svg");
 }
 
 QPushButton#btn-solo {
-	image: url("resources:headphones.svg");
+	image: url("resources:assets/ui/headphones.svg");
 }
 
 QPushButton#btn-stepper-left {
-	image: url("resources:arrow-left.svg");
+	image: url("resources:assets/ui/arrow-left.svg");
 }
 
 QPushButton#btn-stepper-right {
-	image: url("resources:arrow-right.svg");
+	image: url("resources:assets/ui/arrow-right.svg");
 }
 
 QPushButton#btn-stepper-down {
-	image: url("resources:arrow-down.svg");
+	image: url("resources:assets/ui/arrow-down.svg");
 }
 
 QPushButton#btn-stepper-down:hover,
@@ -517,7 +517,7 @@ lmms--gui--TrackOperationsWidget QPushButton:pressed {
 
 QPushButton#btn-mute-inv,
 QPushButton#btn-mute:checked {
-	image: url("resources:speaker_slash.svg");
+	image: url("resources:assets/ui/speaker_slash.svg");
 	border: 1 solid #BE616A;
 	background: qlineargradient(
 		x1:0, y1:0, x2:0, y2:1,
@@ -558,7 +558,7 @@ lmms--gui--AutomatableSlider::groove:vertical {
 
 lmms--gui--AutomatableSlider::handle:vertical {
 	background: none;
-	border-image: url("resources:main_slider.png");
+	border-image: url("resources:assets/ui/main_slider.png");
 	width: 26px;
 	height: 10px;
 	border-radius: 0px;
@@ -579,7 +579,7 @@ lmms--gui--AutomatableSlider::groove:horizontal {
 
 lmms--gui--AutomatableSlider::handle:horizontal {
 	background: none;
-	border-image: url("resources:horizontal_slider.png");
+	border-image: url("resources:assets/ui/horizontal_slider.png");
 	width: 10px;
 	height: 26px;
 	border-radius: 0px;
@@ -1207,3 +1207,4 @@ lmms--gui--LmmsPalette {
   font-weight: bold;
   font-size: 12px;
 }
+

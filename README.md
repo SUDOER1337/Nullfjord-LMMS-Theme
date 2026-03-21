@@ -1,15 +1,33 @@
-# "Nullfjord" LMMS Theme
+# Nullfjord LMMS Theme
 
-### a Theme i made for 1.3 Nightly
+Nullfjord is a cool-toned green-blue theme for LMMS 1.3 nightly.
 
-A cool-toned green-blue, minimal theme for LMMS 1.3 nightly.
+![Nullfjord theme preview](./screenshots/theme_preview.png)
 
-**Preview**
-![Nullfjord theme preview](./Screenshots/Nullfjord.png)
-
-**Installation**
+## Installation
 
 1. Clone the repo:
-   ```git clone https://github.com/SUDOER1337/Nullfjord-LMMS-Theme```
-2. Point LMMS to this theme folder (should be in your home as "~/Nullfjord-LMMS-Theme" ) (or copy the folder into your LMMS themes directory).
-3. Restart LMMS
+
+   ```bash
+   git clone https://github.com/SUDOER1337/Nullfjord-LMMS-Theme
+   ```
+
+2. Point LMMS at the `Nullfjord/` subfolder inside the cloned repository.
+3. Restart LMMS.
+
+`Nullfjord/` is the LMMS theme directory. It contains every runtime file LMMS needs, so selecting that single folder in LMMS should work directly.
+
+## Development
+
+Edit the modular stylesheet sources in `src/styles/`, then rebuild the LMMS-facing stylesheet in `Nullfjord/style.css`:
+
+```bash
+tools/build-style.sh
+tools/check-resources.sh
+```
+
+Additional project notes:
+
+- [Compatibility](./docs/compatibility.md)
+- [Theme Map](./docs/theme-map.md)
+- [Asset Index](./docs/asset-index.md)
